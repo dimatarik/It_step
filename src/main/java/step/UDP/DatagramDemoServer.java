@@ -39,6 +39,8 @@ public class DatagramDemoServer {
             datagram = new DatagramPacket(data, data.length,
                clientAddr, clientPort);
             servSocket.send(datagram);
+            
+            
          } catch(IOException e) {
             System.err.println("I/O Exception : " + e.toString());
          }

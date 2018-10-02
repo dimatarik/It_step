@@ -11,7 +11,7 @@ public class UDPServer {
       new DatagramSocket(3456);
    byte data[]=new byte[256];
    DatagramPacket p = 
-      new DatagramPacket(data, 3);
+      new DatagramPacket(data, 256);
    System.out.println("Waiting...");
    s.receive(p);
 //   System.out.println("Datagram received: "+
